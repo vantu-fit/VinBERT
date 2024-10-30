@@ -1,0 +1,11 @@
+FROM vantufit/flash-attn-cuda
+
+WORKDIR /opt/ml/code
+
+RUN pip install --ignore-installed blinker
+
+RUN pip install sagemaker-training sagemaker peft
+
+# COPY ./src .
+
+ENV SAGEMAKER_PROGRAM train.py

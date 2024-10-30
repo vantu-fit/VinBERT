@@ -1,0 +1,9 @@
+huggingface
+transformers==4.45.1
+Pillow
+numpy
+einops
+tqdm
+dataclasses
+timm
+torchvision
